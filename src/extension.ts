@@ -24,9 +24,16 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World Encryption');
 	});
+	
+	let decryption = vscode.commands.registerCommand('vscode-crypto.decrypt', () => {
+		// The code you place here will be executed every time your command is executed
+		// Display a message box to the user
+		vscode.window.showInformationMessage('Hello World Decryption');
+	});
 
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(encryption);
+	context.subscriptions.push(decryption);
 }
 
 // this method is called when your extension is deactivated
