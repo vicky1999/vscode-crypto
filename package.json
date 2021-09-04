@@ -10,17 +10,12 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:vscode-crypto.helloWorld",
 		"onCommand:vscode-crypto.encrypt",
 		"onCommand:vscode-crypto.decrypt"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "vscode-crypto.helloWorld",
-				"title": "Hello World"
-			},
 			{
 				"command": "vscode-crypto.encrypt",
 				"title": "Encrypt Text"
