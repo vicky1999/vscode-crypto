@@ -1,7 +1,7 @@
 
 
 export class CaesarCipher {
-    encrypt = (): string => {
-        return 'Caesar Cipher Encryption';
+    static encrypt = (text: string, start: string): string => {
+        return 'Caesar Cipher Encryption';  
     };
 }
