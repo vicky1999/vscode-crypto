@@ -1,7 +1,5 @@
 import { ShiftCipher } from './shift.cipher';
 
-let ciphers = [
-    { name: 'Shift Cipher', cipher: ShiftCipher }
+export const ciphers = [
+    "Shift Cipher"
 ];
-
-module.exports = ciphers;
