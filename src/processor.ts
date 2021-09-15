@@ -16,7 +16,7 @@ export function processInput(text: string, cipher: string, type: string) {
                     vscode.window.showInformationMessage("Encrypted Text: "+ShiftCipher.encrypt(text, amount));
                 }
                 else {
-                    // ShiftCipher.decrypt(text, amount);
+                    vscode.window.showInformationMessage("Decrypted Text: "+ShiftCipher.decrypt(text, amount));
                 }
             });
             break;
