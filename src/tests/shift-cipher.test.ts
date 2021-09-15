@@ -1,4 +1,4 @@
-import { ShiftCipher } from "../../../crypto/shift.cipher";
+import { ShiftCipher } from "../crypto/shift.cipher";
 
 var assert = require('assert');
 
