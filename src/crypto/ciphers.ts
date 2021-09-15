@@ -1,7 +1,3 @@
-import { CaesarCipher } from './caesar.cipher';
-
-let ciphers = [
-    { name: 'Caesar Cipher', cipher: CaesarCipher }
+export const ciphers = [
+    "Shift Cipher"
 ];
-
-module.exports = ciphers;
