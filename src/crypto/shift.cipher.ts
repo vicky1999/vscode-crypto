@@ -4,6 +4,10 @@ export class ShiftCipher {
         let res = '';
         text = text.toUpperCase();
         for(let i=0;i<text.length;i++) {
+            if(text.charCodeAt(i) < 65 || text.charCodeAt(i) > 90) {
+                res+=text[i];
+                continue;
+            }
             res+=String.fromCharCode(65+(text.charCodeAt(i) - 65 + amount)%26);
         }
 
@@ -15,6 +19,10 @@ export class ShiftCipher {
         text = text.toUpperCase();
         let charCode = 0;
         for(let i=0;i<text.length;i++) {
+            if(text.charCodeAt(i) < 65 || text.charCodeAt(i) > 90) {
+                res+=text[i];
+                continue;
+            }
             charCode = (text.charCodeAt(i) - 65 - amount%26);
             if(charCode < 0) {
                 charCode+=26;

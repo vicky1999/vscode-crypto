@@ -19,11 +19,11 @@ describe('Shift Cipher Test', function() {
   });
 
   describe("Decryption Test", () => {
-    it('should encrypt text with the specified amount', function() {
+    it('should decrypt text with the specified amount', function() {
       assert.equal(ShiftCipher.decrypt("uftu",1), "TEST");
     });
-    it('should encrypt text when amount > 26', function() {
-      assert.equal(ShiftCipher.decrypt("uftu",28), "WHVW");
+    it('should decrypt text when amount > 26', function() {
+      assert.equal(ShiftCipher.decrypt("uftu",28), "SDRS");
     });
     it('should return the same text when amount = 26', function() {
       assert.equal(ShiftCipher.decrypt("test",26), "TEST");
