@@ -1,3 +1,4 @@
 export const ciphers = [
-    "Shift Cipher"
+    "Shift Cipher",
+    "ROT13 Cipher"
 ];
