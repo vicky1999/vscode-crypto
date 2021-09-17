@@ -8,4 +8,9 @@ export class Rot13 {
         }
         return res;
     }
+
+    static decrypt(text: string) {
+        let res = this.encrypt(text);
+        return res;
+    }
 }
