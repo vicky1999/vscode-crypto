@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { Rot13 } from './crypto/rot13.cipher';
 import { ShiftCipher } from './crypto/shift.cipher';
 
 export function processInput(text: string, cipher: string, type: string) {
@@ -12,7 +13,7 @@ export function processInput(text: string, cipher: string, type: string) {
                     vscode.window.showErrorMessage("Amount should be an integer");
                     return;
                 }
-                if(type==="encryption") { 
+                if(type === "encryption") { 
                     vscode.window.showInformationMessage("Encrypted Text: "+ShiftCipher.encrypt(text, amount));
                 }
                 else {
@@ -20,5 +21,13 @@ export function processInput(text: string, cipher: string, type: string) {
                 }
             });
             break;
+
+        case "ROT13 Cipher":
+            if(type === "encryption") {
+                vscode.window.showInformationMessage("Encrypted Text: "+Rot13.encrypt(text));
+            }
+            else {
+                vscode.window.showInformationMessage("Decrypted Text: "+Rot13.decrypt(text));
+            }
     }
 }
