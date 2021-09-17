@@ -29,5 +29,6 @@ export function processInput(text: string, cipher: string, type: string) {
             else {
                 vscode.window.showInformationMessage("Decrypted Text: "+Rot13.decrypt(text));
             }
+            break;
     }
 }
